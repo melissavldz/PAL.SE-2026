@@ -2,7 +2,7 @@
   background-color: #fbf8f5;
   width: 100%;
   min-width: 1440px;
-  min-height: 750px;
+  min-height: 900px;
   display: flex;
   overflow: hidden;
 }
@@ -14,7 +14,7 @@
 
 .login .background {
   width: 736px;
-  height: 750px;
+  height: 900px;
   display: flex;
   background-color: #5b1616;
 }
@@ -37,7 +37,7 @@
 
 .login .heading-margin {
   position: absolute;
-  top: 150px;
+  top: 250px;
   left: 0;
   width: 576px;
   height: 130px;
@@ -105,7 +105,7 @@
 
 .login .margin {
   position: absolute;
-  top: 280px;
+  top: 380px;
   left: 0;
   width: 518px;
   height: 134px;
@@ -133,7 +133,7 @@
 
 .login .container-2 {
   position: absolute;
-  top: 414px;
+  top: 514px;
   left: 0;
   width: 576px;
   height: 104px;
@@ -297,7 +297,7 @@
 
 .login .element-removebg-preview {
   position: absolute;
-  top: -10px;
+  top: 110px;
   left: 480px;
   width: 380px;
   height: 380px;
@@ -312,8 +312,7 @@
   display: flex;
   background-color: transparent;
   opacity: 0.6;
-  margin-top: -50px;
-  margin-left: 90px;
+  margin-top: 80px;
 }
 
 .login .p {
