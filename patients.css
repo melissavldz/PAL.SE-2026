@@ -1332,16 +1332,19 @@
 }
 
 .patients-view .action-menu-item {
+  display: block;
   padding: 10px 12px;
   font-family: "Inter-Medium", Helvetica;
   font-weight: 500;
   color: #2b2b2b;
   font-size: 13px;
   line-height: normal;
+  text-decoration: none;
 }
 
 .patients-view .action-menu-item:hover {
   background-color: #f7f4f1;
+  text-decoration: none;
 }
 
 .patients-view .text-wrapper-15 {
