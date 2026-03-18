@@ -221,22 +221,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const fields = [
     {
       selector: ".section .container-11 .container-12:nth-child(1) .input",
+      type: "text",
+      placeholder: "NEO-2024-001"
+    },
+    {
+      selector: ".section .container-11 .container-12:nth-child(2) .input",
       type: "select",
       placeholder: "Select Sex",
       options: ["Male", "Female"]
     },
     {
-      selector: ".section .container-11 .container-12:nth-child(2) .input",
+      selector: ".section .container-11 .container-12:nth-child(3) .input",
       type: "number",
       placeholder: "e.g. 38"
     },
     {
-      selector: ".section .container-11 .container-12:nth-child(3) .input",
+      selector: ".section .container-14 .container-12:nth-child(1) .input",
       type: "number",
       placeholder: "e.g. 3200"
     },
     {
-      selector: ".section .container-14 .container-12 .input",
+      selector: ".section .container-14 .container-12:nth-child(2) .input",
       type: "select",
       placeholder: "Delivery Mode",
       options: ["Vaginal", "Cesarean"]
