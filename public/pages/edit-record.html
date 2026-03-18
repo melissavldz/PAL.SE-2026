@@ -188,38 +188,53 @@
 
                 <section class="edit-card">
                   <h2>Current Treatment</h2>
-                  <div class="treatment-grid">
-                    <label class="field-group field-wide">
-                      <span class="field-label">ANTIBIOTIC REGIMEN</span>
-                      <div class="field-control">
-                        <input type="text" placeholder="e.g. Ampicillin + Gentamicin" />
-                      </div>
+                  <div class="checkbox-list checkbox-list-two" role="group" aria-label="Current treatment options">
+                    <label class="check-row">
+                      <input type="checkbox" name="central-venous-line" />
+                      <span>Central Venous Line</span>
                     </label>
-                    <label class="field-group">
-                      <span class="field-label">DURATION (DAYS)</span>
-                      <div class="field-control has-stepper">
-                        <input type="number" min="0" max="30" step="1" placeholder="Days" />
-                        <div class="stepper-controls">
-                          <button class="stepper-button stepper-up" type="button" aria-label="Increase duration">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6"></path></svg>
-                          </button>
-                          <button class="stepper-button stepper-down" type="button" aria-label="Decrease duration">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 10l-6 6-6-6"></path></svg>
-                          </button>
-                        </div>
-                      </div>
+                    <label class="check-row">
+                      <input type="checkbox" name="umbilical-arterial-line" />
+                      <span>Umbilical Arterial Line</span>
                     </label>
+                    <label class="check-row">
+                      <input type="checkbox" name="inotrope" />
+                      <span>Inotrope</span>
+                    </label>
+                    <label class="check-row">
+                      <input type="checkbox" name="intubated" />
+                      <span>Intubated</span>
+                    </label>
+                    <label class="check-row">
+                      <input type="checkbox" name="ecmo" />
+                      <span>ECMO</span>
+                    </label>
+                  </div>
+                </section>
 
-                    <div class="treatment-options" role="group" aria-label="Treatment options">
-                      <label class="check-row">
-                        <input type="checkbox" />
-                        <span>Oxygen Therapy</span>
-                      </label>
-                      <label class="check-row">
-                        <input type="checkbox" />
-                        <span>Phototherapy</span>
-                      </label>
-                    </div>
+                <section class="edit-card">
+                  <h2>Comorbidities</h2>
+                  <div class="checkbox-list checkbox-list-single" role="group" aria-label="Comorbidities options">
+                    <label class="check-row">
+                      <input type="checkbox" name="necrotizing-enterocolitis" />
+                      <span>Necrotizing Enterocolitis</span>
+                    </label>
+                    <label class="check-row">
+                      <input type="checkbox" name="non-cardiac-surgical-disease" />
+                      <span>Non-Cardiac Surgical Disease</span>
+                    </label>
+                    <label class="check-row">
+                      <input type="checkbox" name="chronic-lung-disease" />
+                      <span>Chronic Lung Disease</span>
+                    </label>
+                    <label class="check-row">
+                      <input type="checkbox" name="congenital-cardiac-disease" />
+                      <span>Congenital Cardiac Disease</span>
+                    </label>
+                    <label class="check-row">
+                      <input type="checkbox" name="ivh-or-vp-shunt" />
+                      <span>Presence of Intraventricular Hemorrhage or Ventriculo-Peritoneal Shunt</span>
+                    </label>
                   </div>
 
                   <div class="action-wrap">

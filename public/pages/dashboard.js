@@ -278,39 +278,29 @@ document.addEventListener("DOMContentLoaded", function () {
       placeholder: "Platelet Count"
     },
     {
-      selector: ".sections-side-by .section-4:nth-child(2) .container-22 .container-23:nth-child(1) .input-5",
+      selector: ".section-4 .container-22 .container-23:nth-child(1) .input-5",
       type: "number",
       placeholder: "HR (bpm)"
     },
     {
-      selector: ".sections-side-by .section-4:nth-child(2) .container-22 .container-23:nth-child(2) .input-5",
+      selector: ".section-4 .container-22 .container-23:nth-child(2) .input-5",
       type: "number",
       placeholder: "Temp (C)"
     },
     {
-      selector: ".sections-side-by .section-4:nth-child(2) .container-28 .container-23:nth-child(1) .input-5",
+      selector: ".section-4 .container-28 .container-23:nth-child(1) .input-5",
       type: "text",
       placeholder: "SBP / DBP"
     },
     {
-      selector: ".sections-side-by .section-4:nth-child(2) .container-28 .container-23:nth-child(2) .input-5",
+      selector: ".section-4 .container-28 .container-23:nth-child(2) .input-5",
       type: "number",
       placeholder: "O2 Sat (%)"
     },
     {
-      selector: ".sections-side-by .section-4:nth-child(2) .container-25 .input-5",
+      selector: ".section-4 .container-25 .input-5",
       type: "number",
       placeholder: "Resp Rate (/min)"
-    },
-    {
-      selector: ".section-5 .container-15 .container-30 .input-6",
-      type: "text",
-      placeholder: "e.g. Ampicillin + Gentamicin"
-    },
-    {
-      selector: ".section-5 .container-15 .container-23 .input-2",
-      type: "number",
-      placeholder: "Duration (days)"
     }
   ];
 

@@ -292,6 +292,20 @@
   padding-bottom: 2px;
 }
 
+.dashboard .checkbox-list {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px 20px;
+}
+
+.dashboard .checkbox-list-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.dashboard .checkbox-list-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .dashboard .check-row {
   display: flex;
   align-items: center;

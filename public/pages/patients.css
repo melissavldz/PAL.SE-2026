@@ -524,21 +524,22 @@
 
 .patients-view .table {
   margin-top: 1px;
-  width: 1114px;
   height: 388.5px;
   margin-left: 1px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .patients-view .header-row {
   height: 47px;
   position: relative;
+  display: flex;
 }
 
 .patients-view .cell {
   left: 0;
-  width: 152px;
+  width: 294px;
   height: 47px;
   display: flex;
   position: absolute;
@@ -822,7 +823,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 152px;
+  width: 294px;
   height: 57px;
   display: flex;
   border-bottom-width: 1px;
@@ -1605,7 +1606,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 152px;
+  width: 294px;
   height: 56px;
   display: flex;
 }

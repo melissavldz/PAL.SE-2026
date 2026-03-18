@@ -112,7 +112,7 @@
                             <div class="container-13"><div class="text-wrapper-7">Vaginal</div></div>
                           </div>
                         </div>
-                        <div class="margin-2">
+                        <!-- <div class="margin-2">
                           <div class="label-wrapper">
                             <div class="label-2">
                               <div class="toggle">
@@ -121,7 +121,7 @@
                               <div class="text-wrapper-12">LBW / VLBW</div>
                             </div>
                           </div>
-                        </div>
+                        </div> -->
                         <div class="margin-2">
                           <div class="label-wrapper">
                             <div class="label-3">
@@ -229,8 +229,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="sections-side-by">
-                      <div class="section-4">
+                    <!-- <div class="sections-side-by"> -->
+                      <!-- <div class="section-4">
                         <div class="container-21">
                           <div class="background-2"><div class="text-18">4</div></div>
                           <div class="heading-4"><div class="text-19">Laboratory</div></div>
@@ -262,10 +262,10 @@
                             <div class="container-27"><div class="text-20">NEG</div></div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                       <div class="section-4">
-                        <div class="container-21">
-                          <div class="background-2"><div class="text-21">5</div></div>
+                        <div class="container-10">
+                          <div class="background-2"><div class="text-21">4</div></div>
                           <div class="heading-5"><div class="text-wrapper-31">Physiological (Hourly)</div></div>
                         </div>
                         <div class="container-22">
@@ -303,36 +303,67 @@
                           </div>
                         </div>
                       </div>
-                    </div>
+                    <!-- </div> -->
                     <div class="section-5">
                       <div class="container-10">
-                        <div class="background-2"><div class="text-22">6</div></div>
+                        <div class="background-2"><div class="text-22">5</div></div>
                         <div class="heading-6"><div class="text-23">Current Treatment</div></div>
                       </div>
-                      <div class="container-15">
-                        <div class="container-30">
-                          <div class="label-12"><div class="text-wrapper-38">ANTIBIOTIC REGIMEN</div></div>
-                          <div class="input-6">
-                            <div class="container-31">
-                              <div class="text-wrapper-39">e.g. Ampicillin + Gentamicin</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="container-23">
-                          <div class="label-11"><div class="text-wrapper-40">DURATION (DAYS)</div></div>
-                          <div class="input-2"></div>
-                        </div>
-                        <div class="container-32">
-                          <div class="label-13">
-                            <div class="input-7"></div>
-                            <img class="check-2" src="img/check.svg" />
-                            <div class="text-wrapper-41">Oxygen Therapy</div>
-                          </div>
-                          <div class="label-14">
-                            <div class="input-4"></div>
-                            <div class="text-24">Phototherapy</div>
-                          </div>
-                        </div>
+                      <div class="treatment-checkbox-list">
+                        <label class="treatment-checkbox-item">
+                          <input class="input-4 checkbox-control" type="checkbox" name="central-venous-line" />
+                          <span class="treatment-checkbox-text">Central Venous Line</span>
+                        </label>
+                        <label class="treatment-checkbox-item">
+                          <input class="input-4 checkbox-control" type="checkbox" name="umbilical-arterial-line" />
+                          <span class="treatment-checkbox-text">Umbilical Arterial Line</span>
+                        </label>
+                        <label class="treatment-checkbox-item">
+                          <input class="input-4 checkbox-control" type="checkbox" name="inotrope" />
+                          <span class="treatment-checkbox-text">Inotrope</span>
+                        </label>
+                        <label class="treatment-checkbox-item">
+                          <input class="input-4 checkbox-control" type="checkbox" name="intubated" />
+                          <span class="treatment-checkbox-text">Intubated</span>
+                        </label>
+                        <label class="treatment-checkbox-item">
+                          <input class="input-4 checkbox-control" type="checkbox" name="ecmo" />
+                          <span class="treatment-checkbox-text">ECMO</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="section-6">
+                      <div class="container-10">
+                        <div class="background-2"><div class="text-53">6</div></div>
+                        <div class="heading-9"><div class="text-54">Comorbidities</div></div>
+                      </div>
+                      <div class="comorbidity-checkbox-list">
+                        <label class="treatment-checkbox-item">
+                          <input class="input-4 checkbox-control" type="checkbox" name="necrotizing-enterocolitis" />
+                          <span class="treatment-checkbox-text">Necrotizing Enterocolitis</span>
+                        </label>
+                        <label class="treatment-checkbox-item">
+                          <input class="input-4 checkbox-control" type="checkbox" name="non-cardiac-surgical-disease" />
+                          <span class="treatment-checkbox-text">Non-Cardiac Surgical Disease</span>
+                        </label>
+                        <label class="treatment-checkbox-item">
+                          <input class="input-4 checkbox-control" type="checkbox" name="chronic-lung-disease" />
+                          <span class="treatment-checkbox-text">Chronic Lung Disease</span>
+                        </label>
+                        <label class="treatment-checkbox-item">
+                          <input class="input-4 checkbox-control" type="checkbox" name="congenital-cardiac-disease" />
+                          <span class="treatment-checkbox-text">Congenital Cardiac Disease</span>
+                        </label>
+                        <label class="treatment-checkbox-item">
+                          <input
+                            class="input-4 checkbox-control"
+                            type="checkbox"
+                            name="ivh-or-vp-shunt"
+                          />
+                          <span class="treatment-checkbox-text"
+                            >Presence of Intraventricular Hemorrhage or Ventriculo-Peritoneal Shunt</span
+                          >
+                        </label>
                       </div>
                     </div>
                     <button class="action-button" type="button" id="calculate-risk">

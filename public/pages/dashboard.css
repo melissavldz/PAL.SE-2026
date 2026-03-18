@@ -451,21 +451,25 @@
 .dashboard .container-9 {
   margin-left: 20px;
   width: 1180px;
-  height: 1359px;
+  min-height: 1359px;
+  height: auto;
   display: flex;
   gap: 32px;
 }
 
 .dashboard .left-column-forms {
   width: 748px;
-  height: 1343px;
+  /* min-height: 1343px; */
+  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
 .dashboard .section {
-  height: 242px;
+  min-height: 242px;
+  height: auto;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -781,7 +785,9 @@
 }
 
 .dashboard .section-2 {
-  height: 203px;
+  min-height: 203px;
+  height: auto;
+  padding-bottom: 24px;
   gap: 24px;
   display: flex;
   flex-direction: column;
@@ -1089,7 +1095,9 @@
 }
 
 .dashboard .section-3 {
-  height: 245px;
+  min-height: 245px;
+  height: auto;
+  padding-bottom: 24px;
   gap: 24px;
   display: flex;
   flex-direction: column;
@@ -1337,8 +1345,9 @@
 }
 
 .dashboard .section-4 {
-  width: 362px;
-  height: 320px;
+  min-height: 340px;
+  height: auto;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -1393,22 +1402,24 @@
 
 .dashboard .container-22 {
   margin-left: 25px;
-  width: 312px;
+  width: 698px;
   margin-top: 24px;
   display: flex;
   gap: 16px;
 }
 
 .dashboard .container-23 {
-  width: 148px;
+  width: 341px;
   height: 63px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 1;
+  min-width: 0;
 }
 
 .dashboard .label-11 {
-  width: 148px;
+  width: 100%;
   display: flex;
 }
 
@@ -1427,7 +1438,7 @@
 }
 
 .dashboard .input-5 {
-  width: 148px;
+  width: 100%;
   height: 42px;
   display: flex;
   background-color: #f5f4ef;
@@ -1473,7 +1484,7 @@
 
 .dashboard .container-25 {
   margin-left: 25px;
-  width: 148px;
+  width: 341px;
   height: 63px;
   margin-top: 17px;
   display: flex;
@@ -1640,7 +1651,7 @@
 
 .dashboard .container-28 {
   margin-left: 25px;
-  width: 312px;
+  width: 698px;
   margin-top: 17px;
   display: flex;
   gap: 16px;
@@ -1712,14 +1723,97 @@
 }
 
 .dashboard .section-5 {
-  height: 161px;
-  gap: 24px;
+  min-height: 161px;
+  height: auto;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 8px;
   border: 1px solid;
   border-color: #00000014;
+}
+
+.dashboard .treatment-checkbox-list {
+  margin-left: 25px;
+  width: 698px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 12px;
+  padding-bottom: 25px;
+}
+
+.dashboard .treatment-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard .treatment-checkbox-text {
+  display: flex;
+  align-items: center;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #2b2b2b;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashboard .section-6 {
+  min-height: 220px;
+  height: auto;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #00000014;
+}
+
+.dashboard .text-53 {
+  justify-content: center;
+  margin-top: 4.5px;
+  width: 7.8px;
+  height: 15px;
+  margin-left: 8.1px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0;
+}
+
+.dashboard .heading-9 {
+  margin-top: 2px;
+  display: flex;
+}
+
+.dashboard .text-54 {
+  height: 20px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #2b2b2b;
+  font-size: 16px;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0;
+}
+
+.dashboard .comorbidity-checkbox-list {
+  margin-left: 25px;
+  width: 698px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 25px;
 }
 
 .dashboard .text-22 {
@@ -1904,27 +1998,27 @@
 .dashboard .action-button {
   width: 748px;
   height: 52px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
-  gap: 10px;
+  gap: 12px;
   background-color: #621717;
   border-radius: 6px;
+  padding: 20px;
 }
 
 .dashboard .iconify-icon {
-  margin-top: 16px;
   width: 20px;
   height: 20px;
-  margin-left: 265.0px;
+  margin: 0;
 }
 
 .dashboard .text-wrapper-42 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 17.5px;
-  width: 188.06px;
-  height: 17px;
+  margin-top: 0;
+  width: auto;
+  height: auto;
   font-family: "Inter-Bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
