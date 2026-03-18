@@ -1904,6 +1904,7 @@
 .dashboard .action-button {
   width: 748px;
   height: 52px;
+  margin-bottom: 30px;
   display: flex;
   gap: 10px;
   background-color: #621717;

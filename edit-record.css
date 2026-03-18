@@ -87,6 +87,11 @@
   gap: 32px;
 }
 
+.dashboard .edit-title-group {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 .dashboard .edit-title {
   margin: 0;
   font-family: "Inter-Bold", Helvetica;
@@ -157,7 +162,7 @@
 }
 
 .dashboard .field-grid-single {
-  grid-template-columns: 220px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   margin-top: 14px;
 }
 
@@ -603,6 +608,10 @@
   }
 
   .dashboard .field-grid-four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard .field-grid-single {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 

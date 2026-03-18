@@ -17,6 +17,45 @@
   border-radius: 999px;
 }
 
+.dashboard .edit-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dashboard .crumb-link,
+.dashboard .crumb-current {
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+.dashboard .crumb-link {
+  color: #8c847f;
+}
+
+.dashboard .crumb-link:hover,
+.dashboard .crumb-current:hover {
+  color: #631820;
+}
+
+.dashboard .crumb-current {
+  color: #2b2b2b;
+}
+
+.dashboard .crumb-chevron {
+  width: 14px;
+  height: 14px;
+  color: #8c847f;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .dashboard .monitor-view {
   min-width: 1040px;
   padding: 20px 24px 32px;

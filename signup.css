@@ -3,6 +3,7 @@
   min-width: 1440px;
   min-height: 900px;
   display: flex;
+  background-color: #fbf8f5;
 }
 
 .container .background {
@@ -571,7 +572,7 @@
 
 .container .container-wrapper {
   width: 790px;
-  height: 750px;
+  height: 900px;
   display: flex;
   background-color: #fbf8f5;
   position: relative;
@@ -860,6 +861,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  gap: 4px;
   width: 388px;
   height: 20px;
   margin-top: -1.00px;
@@ -984,4 +986,5 @@
   font-family: "Inter-SemiBold", Helvetica;
   font-weight: 600;
   color: #661818;
+  margin-left : 2px;
 }
