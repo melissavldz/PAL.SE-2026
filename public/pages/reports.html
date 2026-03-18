@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="reports.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="aside">
+        <div class="aside-sidebar reports-sidebar">
+          <div class="nav">
+            <div class="link-margin">
+              <a class="link sidebar-link" href="dashboard.html" aria-label="Open dashboard">
+                <svg class="img icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="8" height="8" rx="1"></rect>
+                  <rect x="13" y="3" width="8" height="5" rx="1"></rect>
+                  <rect x="13" y="10" width="8" height="11" rx="1"></rect>
+                  <rect x="3" y="13" width="8" height="8" rx="1"></rect>
+                </svg>
+                <div class="text">Dashboard</div>
+              </a>
+            </div>
+            <div class="link-wrapper">
+              <a class="div sidebar-link" href="patients.html" aria-label="Open patients">
+                <svg class="img icon-svg sidebar-icon-patients" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="8" cy="8" r="3.5"></circle>
+                  <circle cx="16.5" cy="9" r="2.8"></circle>
+                  <path d="M2.5 19.5a5.5 5.5 0 0 1 11 0"></path>
+                  <path d="M13 19.5a4.3 4.3 0 0 1 7.5 0"></path>
+                </svg>
+                <div class="text-wrapper">Patients</div>
+              </a>
+            </div>
+            <div class="link-wrapper">
+              <a class="div sidebar-link is-active" href="reports.html" aria-label="Open reports">
+                <svg class="img icon-svg sidebar-icon-reports" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14 2.5H7a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8.5z"></path>
+                  <path d="M14 2.5v6h6"></path>
+                  <line x1="9" y1="13" x2="15" y2="13"></line>
+                  <line x1="9" y1="17" x2="15" y2="17"></line>
+                </svg>
+                <div class="text-2">Reports</div>
+              </a>
+            </div>
+            <div class="link-margin-2"></div>
+          </div>
+          <div class="button-margin">
+            <a class="group" href="login.html" aria-label="Logout">
+              <div class="div-wrapper">
+                <div class="div-wrapper">
+                  <div class="SVG">
+                    <svg class="vector logout-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                      <path d="M10 17l-5-5 5-5"></path>
+                      <path d="M5 12h13"></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="text-3">Logout</div>
+            </a>
+          </div>
+          <div class="aside-brand">
+            <img class="image" src="images/logo.png" alt="PAL.SE logo" />
+            <img class="image-2" src="images/name.png" alt="PAL.SE" />
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <header class="header">
+          <div class="div-5">
+            <div class="div-wrapper-2"><div class="text-wrapper-7">Reports</div></div>
+            <div class="iconify-icon-wrapper-2">
+              <svg class="breadcrumb-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M9 18l6-6-6-6"></path>
+              </svg>
+            </div>
+            <div class="div-wrapper-2"><div class="text-7">Neonatal Sepsis Prediction</div></div>
+          </div>
+          <div class="container-wrapper-2">
+            <div class="div-6">
+              <div class="div-7">
+                <div class="div-wrapper-2"><div class="text-8">Dr. Sarah Jenkins</div></div>
+                <div class="div-wrapper-5"><div class="text-wrapper-8">Pediatrician</div></div>
+              </div>
+              <a class="profile-avatar-link" href="profile.html" aria-label="Open profile page">
+                <div class="background"><div class="text-9">SJ</div></div>
+              </a>
+            </div>
+          </div>
+        </header>
+        <div class="background-2">
+          <div class="div-8">
+            <div class="div-9">
+              <div class="div-wrapper-6"><div class="text-10">Reports &amp; Analytics</div></div>
+              <div class="div-wrapper-6"><div class="text-11">Comprehensive sepsis prediction insights</div></div>
+            </div>
+            <button class="button" id="generate-report-btn" type="button" aria-label="Generate report">
+              <img class="img-3" src="images/generate-report.png" alt="Generate report" />
+              <div class="text-12">Generate Report</div>
+            </button>
+          </div>
+          <div class="div-10">
+            <div class="background-border">
+              <div class="div-11">
+                <div class="div-wrapper-2">
+                  <div class="SVG-2">
+                    <img class="total-assessment-icon" src="images/total-assessment-reports.png" alt="Total assessments" />
+                  </div>
+                </div>
+                <div class="text-13">TOTAL ASSESSMENTS</div>
+              </div>
+              <div class="div-wrapper-6"><div class="text-wrapper-9">156</div></div>
+              <div class="div-wrapper-6"><div class="text-wrapper-10">+12 this week</div></div>
+            </div>
+            <div class="background-border-2">
+              <div class="div-11">
+                <div class="div-wrapper-2">
+                  <div class="SVG-2">
+                    <img class="high-risk-cases-icon" src="images/high-risk-cases-reports.png" alt="High risk cases" />
+                  </div>
+                </div>
+                <div class="text-14">HIGH RISK CASES</div>
+              </div>
+              <div class="div-wrapper-6"><div class="text-wrapper-9">18</div></div>
+              <div class="div-wrapper-6"><div class="text-wrapper-10">11.5% of total</div></div>
+            </div>
+            <div class="background-border-3">
+              <div class="div-11">
+                <div class="div-wrapper-2">
+                  <div class="SVG-2">
+                    <img class="accuracy-rate-icon" src="images/accuracy-rate-reports.png" alt="Accuracy rate" />
+                  </div>
+                </div>
+                <div class="text-15">ACCURACY RATE</div>
+              </div>
+              <div class="div-wrapper-6"><div class="text-wrapper-9">94.2%</div></div>
+              <div class="div-wrapper-6"><div class="text-wrapper-10">Based on outcomes</div></div>
+            </div>
+            <div class="background-border-4">
+              <div class="div-11">
+                <img class="avg-response-time-icon" src="images/avg-response-time.png" alt="Average response time" />
+                <div class="text-16">AVG RESPONSE TIME</div>
+              </div>
+              <div class="div-wrapper-6"><div class="text-wrapper-9">2.4h</div></div>
+              <div class="div-wrapper-6"><div class="text-wrapper-10">From detection</div></div>
+            </div>
+          </div>
+          <div class="div-12">
+            <div class="stacked-bar-chart">
+              <div class="margin-6">
+                <div class="div-wrapper-6"><div class="text-wrapper-11">Monthly Risk Distribution</div></div>
+              </div>
+              <div class="margin-7">
+                <div class="div-13">
+                  <div class="div-14">
+                    <div class="text-wrapper-12"><div class="text-17">28</div></div>
+                    <div class="text-wrapper-12"><div class="text-18">21</div></div>
+                    <div class="text-wrapper-12"><div class="text-19">14</div></div>
+                    <div class="text-wrapper-12"><div class="text-20">7</div></div>
+                    <div class="text-wrapper-12"><div class="text-21">0</div></div>
+                  </div>
+                  <div class="horizontal-border">
+                    <div class="div-15">
+                      <div class="horizontal-divider"></div>
+                      <div class="horizontal-divider"></div>
+                      <div class="horizontal-divider"></div>
+                      <div class="horizontal-divider"></div>
+                      <div class="horizontal-divider"></div>
+                    </div>
+                    <div class="may">
+                      <div class="background-3"></div>
+                      <div class="background-4"></div>
+                      <div class="background-5"></div>
+                      <div class="text-wrapper-13"><div class="text-22">May</div></div>
+                    </div>
+                    <div class="jun">
+                      <div class="background-6"></div>
+                      <div class="background-7"></div>
+                      <div class="background-8"></div>
+                      <div class="text-wrapper-13"><div class="text-23">Jun</div></div>
+                    </div>
+                    <div class="jul">
+                      <div class="background-9"></div>
+                      <div class="background-10"></div>
+                      <div class="background-11"></div>
+                      <div class="text-wrapper-13"><div class="text-24">Jul</div></div>
+                    </div>
+                    <div class="aug">
+                      <div class="background-12"></div>
+                      <div class="background-13"></div>
+                      <div class="background-14"></div>
+                      <div class="text-wrapper-13"><div class="text-25">Aug</div></div>
+                    </div>
+                    <div class="sep">
+                      <div class="background-15"></div>
+                      <div class="background-16"></div>
+                      <div class="background-17"></div>
+                      <div class="text-wrapper-13"><div class="text-26">Sep</div></div>
+                    </div>
+                    <div class="oct">
+                      <div class="background-18"></div>
+                      <div class="background-19"></div>
+                      <div class="background-20"></div>
+                      <div class="text-wrapper-13"><div class="text-27">Oct</div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="donut-chart">
+              <div class="margin-6">
+                <div class="div-wrapper-6"><div class="text-wrapper-11">Risk Distribution</div></div>
+              </div>
+              <div class="div-16">
+                <div class="graph risk-chart" role="img" aria-label="Risk distribution pie chart"></div>
+                <div class="div-17">
+                  <div class="div-18">
+                    <div class="div-5">
+                      <div class="background-21"></div>
+                      <div class="text-28">High Risk</div>
+                    </div>
+                    <div class="div-wrapper-2"><div class="text-wrapper-14">37%</div></div>
+                  </div>
+                  <div class="div-19">
+                    <div class="div-5">
+                      <div class="background-22"></div>
+                      <div class="text-29">Moderate</div>
+                    </div>
+                    <div class="div-wrapper-2"><div class="text-wrapper-15">28%</div></div>
+                  </div>
+                  <div class="div-19">
+                    <div class="div-5">
+                      <div class="background-23"></div>
+                      <div class="text-30">Low Risk</div>
+                    </div>
+                    <div class="div-wrapper-2"><div class="text-wrapper-16">35%</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table recent-reports">
+            <div class="horizontal-border-2"><div class="text-31">Recent Reports</div></div>
+            <div class="recent-reports-table-wrap">
+              <table class="recent-table">
+                <thead>
+                  <tr>
+                    <th>REPORT ID</th>
+                    <th>TITLE</th>
+                    <th>DATE</th>
+                    <th>TYPE</th>
+                    <th aria-label="actions"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>RPT-042</td>
+                    <td>Monthly Sepsis Summary — October 2024</td>
+                    <td>Oct 31, 2024</td>
+                    <td><span class="type-pill">SUMMARY</span></td>
+                    <td>
+                      <button class="download-report-btn" type="button" aria-label="Download report">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                          <path d="M12 4v10"></path>
+                          <path d="M8 10l4 4 4-4"></path>
+                          <path d="M4 20h16"></path>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="reports.js"></script>
+  </body>
+</html>
