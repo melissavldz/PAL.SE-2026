@@ -251,58 +251,86 @@
               </section>
 
               <aside class="edit-right-column">
-                <h2 class="results-title">Analysis Results</h2>
-                <section class="results-card">
-                  <span class="risk-chip">HIGH RISK</span>
-                  <div class="risk-donut" style="--risk-percent: 78">
-                    <div class="risk-donut-hole"></div>
-                    <div class="risk-donut-content">
-                      <div class="risk-percentage">78%</div>
-                      <div class="risk-probability">PROBABILITY</div>
+                <div class="analysis-results">
+                  <div class="heading-7"><div class="text-wrapper-43">Analysis Results</div></div>
+                  <div class="background-border">
+                    <div class="background-wrapper">
+                      <div class="background-7"><div class="text-wrapper-44">HIGH RISK</div></div>
+                    </div>
+                    <div class="heading-margin">
+                      <div class="heading-8"><div class="text-25">Sepsis Risk Detected</div></div>
+                    </div>
+                    <p class="based-on-clinical">Based on Clinical &amp; Lab Biomarkers</p>
+                    <div class="margin-3">
+                      <div class="container-33">
+                        <div class="background-8"></div>
+                        <div class="container-34">
+                          <div class="container-35"><div class="text-wrapper-45">78%</div></div>
+                          <div class="container-35"><div class="text-wrapper-46">PROBABILITY</div></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="risk-detected">Sepsis Risk Detected</div>
-                  <div class="risk-caption">Based on Clinical &amp; Lab Biomarkers</div>
-                </section>
-
-                <div class="section-label">
-                  <svg class="section-label-icon" viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="12" cy="12" r="9"></circle>
-                    <path d="M12 10v6M12 7.5h.01"></path>
-                  </svg>
-                  <span>CLINICAL INTERPRETATION</span>
                 </div>
-                <section class="clinical-card">
-                  <p>
-                    <strong>Alert:</strong> Patient shows multiple early-onset indicators including PROM &gt; 18h and CRP
-                    elevation. Tachycardia and poor feeding are consistent with systemic inflammatory response.
-                  </p>
-                </section>
 
-                <section class="history-panel">
-                  <h3>PREDICTION HISTORY</h3>
-                  <div class="history-header">
-                    <span>DATE</span>
-                    <span>LEVEL</span>
-                    <span>PROB</span>
+                <div class="clinical">
+                  <div class="container-36">
+                    <div class="div-wrapper-2">
+                      <div class="div-wrapper-2">
+                        <div class="vector-wrapper"><img class="vector-3" src="img/vector-3.svg" /></div>
+                      </div>
+                    </div>
+                    <div class="text-wrapper-47">CLINICAL INTERPRETATION</div>
                   </div>
-                  <div class="history-row">
-                    <div class="history-date">Oct 24, <br />08:30</div>
-                    <div class="history-level moderate">MODERATE</div>
-                    <div class="history-prob">42%</div>
+                  <div class="strong-alert-wrapper">
+                    <p class="strong-alert">
+                      <span class="span">Alert:</span>
+                      <span class="text-wrapper-48"> Patient shows multiple early-onset</span>
+                      <span class="span"><br /></span>
+                      <span class="text-wrapper-48">indicators including PROM &gt; 18h and CRP</span>
+                      <span class="span"><br /></span>
+                      <span class="text-wrapper-48">elevation. Tachycardia and poor feeding are</span>
+                      <span class="span"><br /></span>
+                      <span class="text-wrapper-48">consistent with systemic inflammatory response.</span>
+                    </p>
                   </div>
-                  <div class="history-row">
-                    <div class="history-date">Oct 23, <br />20:15</div>
-                    <div class="history-level low">LOW</div>
-                    <div class="history-prob">12%</div>
+                </div>
+
+                <div class="prediction-history">
+                  <div class="container-39"><div class="text-wrapper-52">PREDICTION HISTORY</div></div>
+                  <div class="container-40">
+                    <div class="container-41">
+                      <div class="container-42"><div class="text-27">DATE</div></div>
+                      <div class="container-42"><div class="text-28">LEVEL</div></div>
+                      <div class="container-43"><div class="text-29">PROB</div></div>
+                    </div>
+                    <div class="horizontal-border">
+                      <div class="oct-wrapper">
+                        <div class="oct">Oct 24,<br />08:30</div>
+                      </div>
+                      <div class="container-44">
+                        <div class="background-9"><div class="text-wrapper-53">MODERATE</div></div>
+                      </div>
+                      <div class="container-45"><div class="text-wrapper-54">42%</div></div>
+                    </div>
+                    <div class="container-46">
+                      <div class="oct-wrapper">
+                        <div class="oct-2">Oct 23,<br />20:15</div>
+                      </div>
+                      <div class="container-44">
+                        <div class="background-10"><div class="text-wrapper-55">LOW</div></div>
+                      </div>
+                      <div class="container-45"><div class="text-wrapper-56">12%</div></div>
+                    </div>
                   </div>
-                </section>
+                </div>
               </aside>
             </div>
           </main>
         </div>
       </div>
     </div>
+    <script src="dashboard.js"></script>
     <script src="edit-record.js"></script>
   </body>
 </html>

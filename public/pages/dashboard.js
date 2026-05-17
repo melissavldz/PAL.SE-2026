@@ -443,4 +443,80 @@ document.addEventListener("DOMContentLoaded", function () {
       updateRiskDonutFromText();
     });
   }
+
+  const wizardForm = document.getElementById("sepsis-wizard");
+  const stepItems = Array.from(document.querySelectorAll("[data-step-item]"));
+  const stepButtons = Array.from(document.querySelectorAll("[data-step-target]"));
+  const panels = Array.from(document.querySelectorAll("[data-step-panel]"));
+  const prevButton = document.querySelector("[data-wizard-prev]");
+  const nextButton = document.querySelector("[data-wizard-next]");
+  const stepCounter = document.querySelector("[data-current-step]");
+  const submitButton = document.getElementById("calculate-risk");
+
+  if (wizardForm && panels.length) {
+    const totalSteps = panels.length;
+    let currentStep = 1;
+
+    function syncWizard() {
+      stepItems.forEach(function (item) {
+        const itemStep = Number(item.getAttribute("data-step-item"));
+        item.classList.toggle("is-active", itemStep === currentStep);
+        item.classList.toggle("is-complete", itemStep < currentStep);
+      });
+
+      panels.forEach(function (panel) {
+        const panelStep = Number(panel.getAttribute("data-step-panel"));
+        panel.classList.toggle("is-active", panelStep === currentStep);
+      });
+
+      if (stepCounter) {
+        stepCounter.textContent = String(currentStep);
+      }
+
+      if (prevButton) {
+        prevButton.disabled = currentStep === 1;
+      }
+
+      if (nextButton) {
+        nextButton.classList.toggle("is-hidden", currentStep === totalSteps);
+      }
+
+      if (submitButton) {
+        submitButton.classList.toggle("is-hidden", currentStep !== totalSteps);
+      }
+
+      stepButtons.forEach(function (button) {
+        const targetStep = Number(button.getAttribute("data-step-target"));
+        button.setAttribute("aria-current", targetStep === currentStep ? "step" : "false");
+      });
+    }
+
+    function goToStep(step) {
+      currentStep = Math.max(1, Math.min(totalSteps, step));
+      syncWizard();
+    }
+
+    stepButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const targetStep = Number(button.getAttribute("data-step-target"));
+        if (!Number.isNaN(targetStep)) {
+          goToStep(targetStep);
+        }
+      });
+    });
+
+    if (prevButton) {
+      prevButton.addEventListener("click", function () {
+        goToStep(currentStep - 1);
+      });
+    }
+
+    if (nextButton) {
+      nextButton.addEventListener("click", function () {
+        goToStep(currentStep + 1);
+      });
+    }
+
+    syncWizard();
+  }
 });
