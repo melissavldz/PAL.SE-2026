@@ -403,6 +403,47 @@
   letter-spacing: 0.04em;
 }
 
+/* Ensure prediction history in edit-record matches dashboard spacing */
+.prediction-history {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.prediction-history .container-39,
+.prediction-history .container-40 {
+  width: 100%;
+}
+
+.prediction-history .horizontal-border {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding: 12px 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+.prediction-history .oct,
+.prediction-history .oct-2 {
+  color: #84807a;
+  font-size: 12px;
+  line-height: 16.8px;
+}
+
+.prediction-history .background-9,
+.prediction-history .background-10 {
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.prediction-history .text-wrapper-54,
+.prediction-history .text-wrapper-56 {
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
 .dashboard .risk-donut {
   --risk-percent: 78;
   margin-top: 22px;
